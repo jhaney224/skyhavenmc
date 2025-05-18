@@ -1,0 +1,154 @@
+/* The Main CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+:root {
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: calc(var(--spacing) * 5);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #F0F0F0;
+  background-color: #1B1B1B;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+.logo {
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+nav > ul {
+  display: inline-block;
+}
+
+nav > ul > li {
+  display: inline-block;
+  color: #fff;
+  padding: 1em;
+  list-style-type: none;
+}
+
+main, section, footer {
+  @apply mt-20;
+}
+
+p {
+  @apply mt-10 mb-10;
+}
+
+.button, button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .6em 1.2em;
+  margin: .5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2ECC71;
+  cursor: pointer;
+  transition: border-color, background-color .25s ease-in-out 1s;
+}
+
+button:hover, .button:hover {
+  transition: border-color, background-color .5s;
+  background-color: #3498DB;
+  border-color: #3498DB;
+}
+
+button:focus, button:focus-visible, .button:focus, .button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+.card > svg, .card > img {
+  display: inline-block;
+}
+
+.card > svg {
+  height: 5em;
+  width: 5em;
+}
+
+#socials > svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+a {
+  font-weight: 500;
+  color: #E67E22;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #9B59B6;
+}
+
+.button > a {
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+@media (hover: none) {
+  .gallery-caption {
+    opacity: 1 !important;
+  }
+}
