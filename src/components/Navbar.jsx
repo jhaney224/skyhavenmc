@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '/logo.png';
@@ -11,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white shadow-md fixed z-50 top-0 left-0">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        {/* Logo/Brand */}
+        {/* Logo */}
         <a href="/" className="justify-between">
           <img src={logo} className="logo" alt="SkyHavenMC logo" />
         </a>
