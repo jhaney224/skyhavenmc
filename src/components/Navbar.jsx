@@ -4,7 +4,6 @@ import logo from '/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -12,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="justify-between">
-          <img src={logo} className="logo" alt="SkyHavenMC logo" />
+          <img src={logo} className="logo" alt="SkyHavenMC logo"/>
         </a>
 
         {/* Desktop Links */}
@@ -24,12 +23,8 @@ export default function Navbar() {
         </ul>
 
         {/* Hamburger Icon */}
-        <button
-          className="md:hidden text-2xl text-blue-600"
-          onClick={toggleMenu}
-          aria-label="Toggle navigation menu"
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <button className="md:hidden text-2xl text-blue-600" onClick={toggleMenu} aria-label="Toggle navigation menu">
+          {isOpen ? <FaTimes/> : <FaBars/>}
         </button>
       </div>
 

@@ -32,9 +32,9 @@ function App() {
 
         {/* Why Play On SkyHavenMC? */}
         <Motion.section id='features' initial={{ opacity: 0, scale: 0.9 }}
-  whileInView={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true, amount: 0.3 }}>
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}>
           <h2>Why Play on SkyHavenMC?</h2>
 
           <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2 lg:grid-cols-3">
